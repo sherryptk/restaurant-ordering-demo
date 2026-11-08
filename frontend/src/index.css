@@ -1,0 +1,9 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', 'Segoe UI', sans-serif; background: #F8F9FA; }
+
+/* Bulk edit grid cells: placeholders at >=4.5:1. Kept out of the emotion sx because stylis'
+   prefixer + the RTL plugin crash on a nested ::placeholder rule (the modal failed to open in Arabic). */
+.bulk-cell input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
